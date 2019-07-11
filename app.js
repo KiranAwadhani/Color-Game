@@ -7,10 +7,16 @@ var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButons = document.querySelectorAll(".mode");
-
+init();
+function init(){
+		document.getElementById('container').style.display = 'none';
+}
 
 for(i=0; i<modeButons.length; i++){
 
+		document.getElementById('container').style.display = 'block';
+
+	
 	modeButons[i].addEventListener("click", function(){
 
 		modeButons[0].classList.remove("selected");
